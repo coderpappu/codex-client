@@ -17,22 +17,22 @@ const Working = () => {
   const workingCard = [
     {
       icon: customer,
-      count: 20,
+      count: 23,
       title: "Happy Customer",
     },
     {
       icon: success,
-      count: 25,
+      count: 30,
       title: "Successful Projects",
     },
     {
       icon: member,
-      count: 15,
+      count: 13,
       title: "Team Member",
     },
     {
       icon: memberLove,
-      count: 22,
+      count: 25,
       title: "Customer Satfication",
     },
   ];
@@ -65,12 +65,12 @@ const Working = () => {
               />
               <h2 className="lg:text-[22px] text-[16px] px-4 font-semibold leading-6">
                 {onCounter && (
-                  <CountUp start={0} end={250} duration={4}>
-                    25000
+                  <CountUp start={0} end={27} duration={4}>
+                    25
                   </CountUp>
                 )}
                 {""}
-                00{" +"}
+                {" +"}
               </h2>
               <p className="lg:text-[13px] text-[11px] px-4 leading-6 font-normal text-[#EE609C]">
                 Total Customers
@@ -173,11 +173,13 @@ const Working = () => {
                       <h3 className="text-[18px] font-semibold leading-6">
                         {" "}
                         {onCounter && (
-                          <CountUp start={0} end={card.count} duration={6}>
-                            {card.count}
-                          </CountUp>
+                          <CountUp
+                            start={0}
+                            end={card.count}
+                            duration={6}
+                          ></CountUp>
                         )}
-                        {"0+"}
+                        {"+"}
                       </h3>
                       <p className="text-[13px] leading-6 font-normal text-[#EE609C]">
                         {card.title}

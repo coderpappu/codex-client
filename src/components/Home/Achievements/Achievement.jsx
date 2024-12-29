@@ -1,23 +1,23 @@
 import { useState } from "react";
-import "../Achievements/achivement.css";
 import achiveImg from "../../../assets/Home/AchievementsSection/achievement.png";
+import "../Achievements/achivement.css";
 
-import teamImg from "../../../assets/Home/AchievementsSection/team.png";
-import projectImg from "../../../assets/Home/AchievementsSection/project.png";
-import experinceImg from "../../../assets/Home/AchievementsSection/experince.png";
 import clientImg from "../../../assets/Home/AchievementsSection/client.png";
+import experinceImg from "../../../assets/Home/AchievementsSection/experince.png";
+import projectImg from "../../../assets/Home/AchievementsSection/project.png";
+import teamImg from "../../../assets/Home/AchievementsSection/team.png";
 
-import ShowAhieveData from "./ShowAhieveData";
 import ScrollTrigger from "react-scroll-trigger";
 import CommonTitle from "../../../components/Shared/CommonHomeTitle/CommonTitle";
+import ShowAhieveData from "./ShowAhieveData";
 
 const Achievement = () => {
   const [onCounter, setOnCounter] = useState(false);
   const achiveData = [
-    { icon: teamImg, count: 69, name: "Team Member" },
-    { icon: projectImg, count: 76, name: "Project Completed" },
-    { icon: experinceImg, count: 52, name: "Professional Experinces" },
-    { icon: clientImg, count: 98, name: "Happy Client" },
+    { icon: teamImg, count: 3, name: "Journey of Excellence" },
+    { icon: projectImg, count: 30, name: "Project Completed" },
+    { icon: experinceImg, count: 4, name: "Running Project" },
+    { icon: clientImg, count: 25, name: "Customer Satfication" },
   ];
   return (
     //ScrollTrigger When page will be scrolled
