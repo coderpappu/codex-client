@@ -1,0 +1,13 @@
+/* Create custom CSS classes for the transition effect */
+.menu-header {
+  transition: transform 1.4s ease;
+}
+
+.menu-items {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+  opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0);
+}

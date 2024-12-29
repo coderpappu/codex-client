@@ -1,0 +1,35 @@
+.banner-shadows {
+  background: #fff;
+  box-shadow: 0px 30px 74px 0px rgba(186, 188, 218, 0.988);
+}
+.animate-button {
+  animation: pulses 3s infinite;
+}
+@keyframes pulses {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgb(34, 245, 242);
+    border-radius: 200px;
+    border: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgb(240, 136, 205);
+    border-radius: 200px;
+    border: 0;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgb(147, 152, 246);
+    border-radius: 200px;
+    border: 0;
+  }
+}
+.get-btn {
+  fill: #6f4fff;
+  filter: drop-shadow(10px 10px 80px rgba(187, 187, 187, 0.25));
+}
+.pro-btn {
+  stroke: #6f4fff;
+  filter: drop-shadow(10px 10px 80px rgba(187, 187, 187, 0.25));
+}
