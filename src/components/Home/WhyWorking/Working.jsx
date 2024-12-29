@@ -1,38 +1,38 @@
-import customer from "../../../assets/Home/WhyWorking/customer.svg";
-import success from "../../../assets/Home/WhyWorking/success.svg";
-import member from "../../../assets/Home/WhyWorking/member.svg";
-import workingImg from "../../../assets/Home/WhyWorking/MobileMan.png";
-import "./Working.css";
-import memberLove from "../../../assets/Home/WhyWorking/customerLove.svg";
+import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import yellowLine from "../../../assets/Home/WhyWorking/yellowMan.svg";
-import redLine from "../../../assets/Home/WhyWorking/redLine.svg";
-import GrowPic from "../../../assets/Home/WhyWorking/GrowthPic.png";
+import customer from "../../../assets/Home/WhyWorking/customer.svg";
+import memberLove from "../../../assets/Home/WhyWorking/customerLove.svg";
 import GoalPic from "../../../assets/Home/WhyWorking/Goal.svg";
-import { useState } from "react";
+import GrowPic from "../../../assets/Home/WhyWorking/GrowthPic.png";
+import member from "../../../assets/Home/WhyWorking/member.svg";
+import workingImg from "../../../assets/Home/WhyWorking/MobileMan.png";
+import redLine from "../../../assets/Home/WhyWorking/redLine.svg";
+import success from "../../../assets/Home/WhyWorking/success.svg";
+import yellowLine from "../../../assets/Home/WhyWorking/yellowMan.svg";
+import "./Working.css";
 
 const Working = () => {
   const [onCounter, setOnCounter] = useState(false);
   const workingCard = [
     {
       icon: customer,
-      count: 25,
+      count: 20,
       title: "Happy Customer",
     },
     {
       icon: success,
-      count: 54,
+      count: 25,
       title: "Successful Projects",
     },
     {
       icon: member,
-      count: 96,
+      count: 15,
       title: "Team Member",
     },
     {
       icon: memberLove,
-      count: 35,
+      count: 22,
       title: "Customer Satfication",
     },
   ];
