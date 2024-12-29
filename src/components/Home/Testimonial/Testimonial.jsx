@@ -1,13 +1,12 @@
+import { useEffect, useState } from "react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import img2 from "../../../assets/Home/Testimonial/arc.jpeg";
+import img1 from "../../../assets/Home/Testimonial/brc.png";
+import img3 from "../../../assets/Home/Testimonial/gac.jpeg";
 import CommonTitle from "../../../components/Shared/CommonHomeTitle/CommonTitle";
 import "../Testimonial/Testimonial.css";
 import ShowTestimonial from "./ShowTestimonial";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useEffect, useState } from "react";
-import img1 from "../../../assets/Home/Testimonial/pic2.jfif";
-import img2 from "../../../assets/Home/Testimonial/pci3.jfif";
-import img3 from "../../../assets/Home/Testimonial/pic4.jfif";
-import img4 from "../../../assets/Home/Testimonial/pic5.jfif";
 
 const Testimonial = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -24,40 +23,40 @@ const Testimonial = () => {
 
   const testimonialData = [
     {
-      text: "Did everything he said he was going to do and more. Went above and beyond to meet expectations. Made numerous changes to meet needs and wants! Highly recommend this seller! You won’t be disappointed!",
+      text: "Codex Devware provided exceptional website development services. Their expertise and dedication exceeded my expectations, delivering a seamless and outstanding experience. Highly recommended!",
       icon: img1,
-      author: "David Rush",
-      designation: "Engineer at DevAds",
+      author: "Mohammad Rafi",
+      designation: "Marketing Manager at BRC,Saudi Arabia",
     },
     {
-      text: "Very easy and pleasant work together. All questions were answered in detail and friendly at all times. There was good communication and everything was delivered more than on time. again and again and anytime 👍🏽",
+      text: "Codex Devware transformed our vision into an exceptional UI design with seamless functionality. Their team's expertise, combined with top-notch support throughout the process, ensured a smooth and stress-free experience. Truly a reliable partner!",
       icon: img2,
-      author: "Mitchill Marsh",
-      designation: "Developer at MadMan",
+      author: "Billal Hossain",
+      designation: "Manager at ARRC, Saudi Arabia",
     },
     {
-      text: "Very easy and pleasant work together. All questions were answered in detail and friendly at all times. There was good communication and everything was delivered more than on time. again and again and anytime 👍🏽",
+      text: "Codex Devware delivered outstanding graphic design services, creating a stunning logo and a professional company profile that perfectly captured our brand identity. Their creativity, attention to detail, and excellent support made the entire process seamless. Highly recommended!",
       icon: img3,
-      author: "Mitchill Marsh",
-      designation: "Developer at MadMan",
+      author: "Musthafa Kamal",
+      designation: "Director at GAC, Saudi Arabia",
     },
     {
-      text: "Very easy and pleasant work together. All questions were answered in detail and friendly at all times. There was good communication and everything was delivered more than on time. again and again and anytime 👍🏽",
-      icon: img4,
-      author: "Mitchill Marsh",
-      designation: "Developer at MadMan",
+      text: "Codex Devware provided exceptional website development services. Their expertise and dedication exceeded my expectations, delivering a seamless and outstanding experience. Highly recommended!",
+      icon: img1,
+      author: "Mohammad Rafi",
+      designation: "Marketing Manager at BRC,Saudi Arabia",
     },
     {
-      text: "Very easy and pleasant work together. All questions were answered in detail and friendly at all times. There was good communication and everything was delivered more than on time. again and again and anytime 👍🏽",
+      text: "Codex Devware transformed our vision into an exceptional UI design with seamless functionality. Their team's expertise, combined with top-notch support throughout the process, ensured a smooth and stress-free experience. Truly a reliable partner!",
       icon: img2,
-      author: "Mitchill Marsh",
-      designation: "Developer at MadMan",
+      author: "Billal Hossain",
+      designation: "Manager at ARRC, Saudi Arabia",
     },
     {
-      text: "Very easy and pleasant work together. All questions were answered in detail and friendly at all times. There was good communication and everything was delivered more than on time. again and again and anytime 👍🏽",
-      icon: img2,
-      author: "Mitchill Marsh",
-      designation: "Developer at MadMan",
+      text: "Codex Devware delivered outstanding graphic design services, creating a stunning logo and a professional company profile that perfectly captured our brand identity. Their creativity, attention to detail, and excellent support made the entire process seamless. Highly recommended!",
+      icon: img3,
+      author: "Musthafa Kamal",
+      designation: "Director at GAC, Saudi Arabia",
     },
   ];
   useEffect(() => {

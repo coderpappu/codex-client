@@ -21,7 +21,7 @@ const ShowTestimonial = ({ data, index, activeTab }) => {
             activeTab === index ? "text-[#FF7D00] font-bold" : "text-[#a2a2a2]"
           } text-[18px] font-sora`}
         >
-          Customer Support
+          {`Customer's Voice`}
         </h1>
         <p
           className={`${
@@ -34,7 +34,8 @@ const ShowTestimonial = ({ data, index, activeTab }) => {
 
       {/* profile text */}
       <div className=" mx-auto mt-8  flex flex-col justify-center items-center ">
-        <img draggable={false}
+        <img
+          draggable={false}
           src={data.icon}
           className={`mx-auto  ${
             activeTab === index

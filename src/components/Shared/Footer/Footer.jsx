@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Logo from "../../../assets/Home/Logos/logo.svg";
 import { Link } from "react-router-dom";
-import FooterCompanyMenu from "./FooterCompanyMenu";
-import FooterResourcesMenu from "./FooterResourcesMenu";
+import Logo from "../../../assets/Home/Logos/logo.svg";
 import facebook from "../../../assets/Home/Social Icon/facebook.svg";
-import linkdin from "../../../assets/Home/Social Icon/linkdin.svg";
 import insta from "../../../assets/Home/Social Icon/insta.svg";
+import linkdin from "../../../assets/Home/Social Icon/linkdin.svg";
 import youtube from "../../../assets/Home/Social Icon/yt.svg";
-import FooterProjectsMenu from "./FooterProjectsMenu";
 import "../Footer/Footer.css";
+import FooterCompanyMenu from "./FooterCompanyMenu";
+import FooterProjectsMenu from "./FooterProjectsMenu";
+import FooterResourcesMenu from "./FooterResourcesMenu";
 
 const Footer = () => {
   const [menuStates, setMenuStates] = useState("");
@@ -39,7 +39,7 @@ const Footer = () => {
         },
         {
           linkTitle: "FAQS",
-          link: "/",
+          link: "/aboutUs",
         },
       ],
     },

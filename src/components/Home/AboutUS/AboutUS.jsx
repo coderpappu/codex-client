@@ -1,19 +1,19 @@
 import { Fragment, useEffect, useState } from "react";
-import webframe from "../../../assets/Home/About/WebFrame.png";
-import webFrameBlue from "../../../assets/Home/About/WebFrame-blue.png";
+import AppImg from "../../../assets/Home/About/app.png";
+import graphicsImg from "../../../assets/Home/About/graphics.jpeg";
+import seoImg from "../../../assets/Home/About/seo.jpeg";
+import webFrameBlue from "../../../assets/Home/About/web.jpeg";
 // Import Swiper styles
 import "swiper/css";
 
-import "swiper/css/pagination";
-import "swiper/css/pagination";
-import { Autoplay, Navigation } from "swiper/modules";
-import "aos/dist/aos.css";
 import AOS from "aos";
-import "./about.css";
+import "aos/dist/aos.css";
+import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import AboutText from "./AboutText";
+import "./about.css";
 import AboutTabButton from "./AboutTabButton";
-import { Pagination } from "swiper/modules";
+import AboutText from "./AboutText";
 const AboutUS = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -38,7 +38,7 @@ const AboutUS = () => {
   const tabData = [
     {
       id: 0,
-      sliderImage: [webframe, webframe, webframe, webframe],
+      sliderImage: [webFrameBlue, seoImg, AppImg, graphicsImg],
       title: "Build Website with Codex Devware",
       title2: "Elevate Online Productivity with Premium Web Development.",
       text: "If you want to grow your Business or create a website to connect with more people then it will be the best option for you. Check our services and build your websites,",
@@ -52,7 +52,7 @@ const AboutUS = () => {
     },
     {
       id: 2,
-      sliderImage: [webframe, webframe, webframe, webframe],
+      sliderImage: [seoImg, seoImg, seoImg, seoImg],
       title: "SEO with Codex Devware",
       title2: "Boost Your Online Visibility with Our Expert SEO Team",
       text: "Elevate your online presence and attract more visitors with our comprehensive SEO services. Our team of experts will optimize your website and content to rank higher in search engine results",

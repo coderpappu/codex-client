@@ -53,6 +53,7 @@ const FrequentlyAsk = () => {
     <section
       data-aos="zoom-in-up"
       className=" grid xl:grid-cols-2  allContainer mt-10 sm:0"
+      id="faq"
     >
       <div>
         <div className="md:px-10 xl:px-0 lg:px-0 sm:px-6 px-4 xl:text-left lg:text-left md:text-left text-center">
