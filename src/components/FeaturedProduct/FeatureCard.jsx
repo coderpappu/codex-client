@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ellipseSvg from "../../assets/featuredProduct/Ellipse.svg";
 import leftEllipseSvg from "../../assets/featuredProduct/leftEllipse.png";
 import Button from "../../utils/Button";
@@ -7,7 +8,8 @@ export default function FeatureCard({
   orderContent,
   position,
 }) {
-  const { title, subtitle, text, image, animation } = product || {};
+  const { title, subtitle, text, image, animation, exploreLink, demoLink } =
+    product || {};
   return (
     <div
       data-aos={animation}
@@ -44,7 +46,9 @@ export default function FeatureCard({
           <p className="paragraphText">{text}</p>
           <div className="flex gap-5 pt-5 max-md:justify-center">
             <Button>Demo</Button>
-            <Button active={true}>Explore the Product</Button>
+            <Link to={exploreLink}>
+              <Button active={true}>Explore the Product</Button>
+            </Link>
           </div>
         </div>
       </div>

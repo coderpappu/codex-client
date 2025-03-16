@@ -1,19 +1,19 @@
-import kawsarProfile from "../../assets/mdKawsar.jpg";
+import kawsarProfile from "../../assets/Meet_Team/mdkawsar.png";
 import ikhtiarProfile from "../../assets/Meet_Team/MohammadIkhtiar.png";
 // import iftekharProfile from "../../assets/Meet_Team/Iftekhar.jpg";
 import jubairProfile from "../../assets/Meet_Team/Jubair.jpg";
 import nasifaProfile from "../../assets/Meet_Team/Nasifa.jpg";
+import pappuDey from "../../assets/Meet_Team/pappudey.jpg";
 import sanjidaProfile from "../../assets/Meet_Team/Sanjida.png";
 import sourovProfile from "../../assets/Meet_Team/Sourov.jpg";
 import swarnaProfile from "../../assets/Meet_Team/swarna.jpg";
-import pappuDey from "../../assets/pappu.svg";
 
 const memberData = [
   {
     id: 0,
     profile: pappuDey,
     name: "Pappu Dey",
-    role: "Full Stack Developer",
+    role: "Founder & CEO",
     description:
       "Guiding innovation, our CEO leads Codex Devware with a visionary approach.",
     linkedin: "https://www.linkedin.com/in/sourov-dey/",

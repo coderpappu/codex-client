@@ -7,6 +7,7 @@ import Testimonial from "../../components/Home/Testimonial/Testimonial";
 import WhatOffer from "../../components/Home/WhatOffer/WhatOffer";
 import Working from "../../components/Home/WhyWorking/Working";
 import WorkProcess from "../../components/Home/WorkProcess/WorkProcess";
+import TechnologyCarousel from "../../components/Products/Clearance/Technology";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Working />
       <WorkProcess />
       <OurProduct />
+      <TechnologyCarousel />
       <Achievement />
       <WhatOffer />
       <Testimonial />
