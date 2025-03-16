@@ -1,23 +1,24 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "../Pages/Home/Home";
-import FeaturedProduct from "../Pages/FeaturedProduct/FeaturedProduct";
-import Contact from "../Pages/Contact/Contact";
-import MeetTeam from "../Pages/MeetTeam/MeetTeam";
-import About from "../Pages/About/About";
-import Service from "../Pages/Service/Service";
-import Blogs from "../Pages/Blogs/Blogs";
-import BlogEditPage from "../Pages/BlogEditPage/BlogEditPage";
-import ErrorPage from "../Pages/ErrorPage/ErrorPage";
-import Login from "../Pages/Login/Login";
-import Register from "../Pages/Register/Register";
-import BlogDetails from "../Pages/BlogDetails/BlogDetails";
-import Dashboard from "../Pages/Dashboard/Dashboard";
-import PrivateRoute from "./privateRoute/PrivateRoute";
-import Navbar from "../components/Shared/Navbar/Navbar";
-import Footer from "../components/Shared/Footer/Footer";
-import { Toaster } from "react-hot-toast";
-import { useEffect } from "react";
 import Aos from "aos";
+import { useEffect } from "react";
+import { Toaster } from "react-hot-toast";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Footer from "../components/Shared/Footer/Footer";
+import Navbar from "../components/Shared/Navbar/Navbar";
+import About from "../Pages/About/About";
+import BlogDetails from "../Pages/BlogDetails/BlogDetails";
+import BlogEditPage from "../Pages/BlogEditPage/BlogEditPage";
+import Blogs from "../Pages/Blogs/Blogs";
+import Contact from "../Pages/Contact/Contact";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import FeaturedProduct from "../Pages/FeaturedProduct/FeaturedProduct";
+import Home from "../Pages/Home/Home";
+import Login from "../Pages/Login/Login";
+import MeetTeam from "../Pages/MeetTeam/MeetTeam";
+import ClearancePage from "../Pages/Products/Clearance/Clearance";
+import Register from "../Pages/Register/Register";
+import Service from "../Pages/Service/Service";
+import PrivateRoute from "./privateRoute/PrivateRoute";
 const Routers = () => {
   useEffect(() => {
     Aos.init({
@@ -36,6 +37,7 @@ const Routers = () => {
           <Route path="/blogDetails" element={<SingleBlogDetails />} />
         */}
           <Route path="/featuredProduct" element={<FeaturedProduct />} />
+          <Route path="/clearance" element={<ClearancePage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/meetOutTeam" element={<MeetTeam />} />
           <Route

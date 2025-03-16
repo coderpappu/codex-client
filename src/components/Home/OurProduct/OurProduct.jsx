@@ -1,17 +1,17 @@
-import "../OurProduct/OurProduct.css";
 import { Link } from "react-router-dom";
 import arrowImg from "../../../assets/Home/Our Product/arrow-right.png";
 import cardImg from "../../../assets/Home/Our Product/ProductImg1.png";
-import ShowProductCardData from "./ShowProductCardData";
 import CommonTitle from "../../../components/Shared/CommonHomeTitle/CommonTitle";
+import "../OurProduct/OurProduct.css";
+import ShowProductCardData from "./ShowProductCardData";
 
 const OurProduct = () => {
   // Product Main Array Data
   const ProductCardData = [
     {
       icon: cardImg,
-      cardTitle: "Codex Mart",
-      des: "We build high-end software that skyrockets your business growth. We build high-end software that skyrockets your business growth.  ",
+      cardTitle: "E-Clearance",
+      des: "E-Clearance by Codex Devware is a smart and efficient clearance solution for universities and polytechnics. ",
     },
     {
       icon: cardImg,

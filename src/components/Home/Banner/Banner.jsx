@@ -1,10 +1,10 @@
-import "../Banner/Banner.css";
-import yelloCircle from "../../../assets/Home/Common SVG Images/circle.png";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import bannerCircle from "../../../assets/Home/Common SVG Images/circle-home.png";
+import yelloCircle from "../../../assets/Home/Common SVG Images/circle.png";
 import whiteCircle from "../../../assets/Home/Common SVG Images/white-circle.png";
 import whitePolyGonal from "../../../assets/Home/Common SVG Images/white-polygonal.png";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import "../Banner/Banner.css";
 import VideoBanner from "./VideoBanner";
 const Banner = () => {
   const [click, setClick] = useState(1);
