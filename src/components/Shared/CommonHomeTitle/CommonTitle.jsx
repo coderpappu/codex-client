@@ -1,5 +1,5 @@
-import "../../Shared/CommonHomeTitle/CommonTitle.css";
 import "aos/dist/aos.css";
+import "../../Shared/CommonHomeTitle/CommonTitle.css";
 const CommonTitle = ({ title, subtitle }) => {
   return (
     <div data-aos-anchor-placement="top-bottom" className="text-center mt-4">

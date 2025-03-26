@@ -8,15 +8,15 @@ const menu = [
   },
   {
     id: 2,
-    title: "Animation",
+    title: "Academy",
   },
   {
     id: 3,
-    title: "CMS",
+    title: "Dashboard",
   },
   {
     id: 4,
-    title: "E-Commerce",
+    title: "Quiz",
   },
   {
     id: 5,

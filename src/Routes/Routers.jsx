@@ -15,6 +15,7 @@ import FeaturedProduct from "../Pages/FeaturedProduct/FeaturedProduct";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import MeetTeam from "../Pages/MeetTeam/MeetTeam";
+import Portfolio from "../Pages/Portfolio/Portfolio";
 import ClearancePage from "../Pages/Products/Clearance/Clearance";
 import Register from "../Pages/Register/Register";
 import Service from "../Pages/Service/Service";
@@ -32,6 +33,7 @@ const Routers = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blogs" element={<Blogs />} />
           {/* 
           <Route path="/blogDetails" element={<SingleBlogDetails />} />

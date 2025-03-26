@@ -4,10 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import img2 from "../../../assets/Home/Testimonial/arc.jpeg";
 import img1 from "../../../assets/Home/Testimonial/brc.png";
 import img3 from "../../../assets/Home/Testimonial/gac.jpeg";
+import AIDImg from "../../../assets/Partner/aid-coaching.png";
+import MQCImg from "../../../assets/Partner/MQC.jpg";
+import ProbortonImg from "../../../assets/Partner/proborton.png";
 import CommonTitle from "../../../components/Shared/CommonHomeTitle/CommonTitle";
 import "../Testimonial/Testimonial.css";
 import ShowTestimonial from "./ShowTestimonial";
-
 const Testimonial = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [windowSize, setWindowSize] = useState(1024);
@@ -23,42 +25,44 @@ const Testimonial = () => {
 
   const testimonialData = [
     {
-      text: "Codex Devware provided exceptional website development services. Their expertise and dedication exceeded my expectations, delivering a seamless and outstanding experience. Highly recommended!",
+      text: "Working with Codex Devware was an excellent experience. They built a user-friendly, dynamic website that perfectly aligns with our brand. Their commitment to quality and attention to detail truly stand out.",
       icon: img1,
       author: "Mohammad Rafi",
-      designation: "Marketing Manager at BRC,Saudi Arabia",
+      designation: "Marketing Manager at BRC, Saudi Arabia",
+    },
+
+    {
+      text: "Codex Devware's Coaching Management Software and website have transformed how we operate. The system is efficient and user-friendly, making our day-to-day tasks significantly easier. We are thoroughly impressed with their excellent work!",
+      icon: ProbortonImg,
+      author: "MD Ayanul Islam",
+      designation: "Founder at Proborton,Fulgazi , Feni",
     },
     {
-      text: "Codex Devware transformed our vision into an exceptional UI design with seamless functionality. Their team's expertise, combined with top-notch support throughout the process, ensured a smooth and stress-free experience. Truly a reliable partner!",
+      text: "Codex Devware didn't just create a UI for us — they brought our ideas to life. Their team was responsive and professional, ensuring the final design met all our expectations. Highly recommended!",
       icon: img2,
       author: "Billal Hossain",
       designation: "Manager at ARRC, Saudi Arabia",
     },
     {
-      text: "Codex Devware delivered outstanding graphic design services, creating a stunning logo and a professional company profile that perfectly captured our brand identity. Their creativity, attention to detail, and excellent support made the entire process seamless. Highly recommended!",
+      text: "Our branding has never looked better! Codex Devware's graphic design team designed a sleek logo and an elegant company profile that we are proud to showcase. Exceptional service and creativity!",
       icon: img3,
       author: "Musthafa Kamal",
       designation: "Director at GAC, Saudi Arabia",
     },
     {
-      text: "Codex Devware provided exceptional website development services. Their expertise and dedication exceeded my expectations, delivering a seamless and outstanding experience. Highly recommended!",
-      icon: img1,
-      author: "Mohammad Rafi",
-      designation: "Marketing Manager at BRC,Saudi Arabia",
+      text: "We are beyond satisfied with the website Codex Devware created for us. The UI design is modern and visually appealing, offering a seamless experience for both students and staff. A big thank you to their talented team!",
+      icon: AIDImg,
+      author: "Riyad Chowdhury",
+      designation: "Director at AID, Muradpur , Chattogram",
     },
     {
-      text: "Codex Devware transformed our vision into an exceptional UI design with seamless functionality. Their team's expertise, combined with top-notch support throughout the process, ensured a smooth and stress-free experience. Truly a reliable partner!",
-      icon: img2,
-      author: "Billal Hossain",
-      designation: "Manager at ARRC, Saudi Arabia",
-    },
-    {
-      text: "Codex Devware delivered outstanding graphic design services, creating a stunning logo and a professional company profile that perfectly captured our brand identity. Their creativity, attention to detail, and excellent support made the entire process seamless. Highly recommended!",
-      icon: img3,
-      author: "Musthafa Kamal",
-      designation: "Director at GAC, Saudi Arabia",
+      text: "Codex Devware designed a logo for our company that perfectly captures our work and values. We were surprised and thrilled by how well the design represented our identity. Truly outstanding creativity and professionalism!",
+      icon: MQCImg,
+      author: "Mohib Contracting Team",
+      designation: "Construction Company in Saudi Arabia",
     },
   ];
+
   useEffect(() => {
     const testimonialPagination = document
       .getElementById("testimonial")

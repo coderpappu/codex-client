@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import arrowImg from "../../../assets/Home/Our Product/arrow-right.png";
 import cardImg from "../../../assets/Home/Our Product/ProductImg1.png";
+import NexusProImage from "../../../assets/Products/Nextuspro/dashboard.webp";
 import CommonTitle from "../../../components/Shared/CommonHomeTitle/CommonTitle";
 import "../OurProduct/OurProduct.css";
 import ShowProductCardData from "./ShowProductCardData";
@@ -13,9 +14,10 @@ const OurProduct = () => {
       cardTitle: "E-Clearance",
       des: "E-Clearance by Codex Devware is a smart and efficient clearance solution for universities and polytechnics. ",
     },
+
     {
-      icon: cardImg,
-      cardTitle: "Codex Mart",
+      icon: NexusProImage,
+      cardTitle: "Nexus Pro",
       des: "We build high-end software that skyrockets your business growth. We build high-end software that skyrockets your business growth.  ",
     },
     {

@@ -46,7 +46,7 @@ export default function FeatureCard({
           <p className="paragraphText">{text}</p>
           <div className="flex gap-5 pt-5 max-md:justify-center">
             <Button>Demo</Button>
-            <Link to={exploreLink}>
+            <Link to={exploreLink} target="_blank">
               <Button active={true}>Explore the Product</Button>
             </Link>
           </div>

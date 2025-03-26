@@ -41,12 +41,17 @@ const techStack = [
   { bw: Mysql, color: MysqlC, name: "MySQL" },
 ];
 
+const firstRowTechStack = techStack.slice(0, techStack.length);
+const secondRowTechStack = techStack.slice(0, techStack.length).reverse();
+
 const TechnologyCarousel = () => {
   return (
-    <div className="bg-gradient-to-r from-[#02022d] to-[#08002c] text-white py-12 my-12">
+    <div className="bg-gradient-to-r from-[#02022D] via-[#4d2ddd] to-[#02022D] text-white py-12 my-12">
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold">Technology</h2>
-        <p className="text-gray-400 text-sm md:text-base pt-2">
+        <h2 className="font-sora lg:text-[40px] md:text-[32px] text-[22px] font-bold ">
+          Technology
+        </h2>
+        <p className="text-gray-400 text-sm md:text-base ">
           That Power Our Design & Development
         </p>
       </div>
@@ -66,9 +71,9 @@ const TechnologyCarousel = () => {
             1024: { slidesPerView: 8 },
             1280: { slidesPerView: 10 },
           }}
-          className="mb-6"
+          className="mb-10"
         >
-          {techStack.map((tech, index) => (
+          {firstRowTechStack.map((tech, index) => (
             <SwiperSlide key={index} className="flex justify-center">
               <div className="relative w-12 h-12 md:w-14 md:h-14 group">
                 <img
@@ -101,7 +106,7 @@ const TechnologyCarousel = () => {
             1280: { slidesPerView: 10 },
           }}
         >
-          {techStack.map((tech, index) => (
+          {secondRowTechStack.map((tech, index) => (
             <SwiperSlide key={index} className="flex justify-center">
               <div className="relative w-12 h-12 md:w-14 md:h-14 group">
                 <img
