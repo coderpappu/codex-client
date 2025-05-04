@@ -48,7 +48,7 @@ const DesktopMenu = () => {
         </li>
         <li>
           <Link
-            to="/aboutUs"
+            to="/aboutus"
             className={
               route.pathname === "/aboutUs" ? activeMenu : inactiveMenu
             }
@@ -68,7 +68,7 @@ const DesktopMenu = () => {
         </li>
         <li>
           <Link
-            to="/featuredProduct"
+            to="/featured-product"
             className={
               route.pathname === "/featuredProduct" ? activeMenu : inactiveMenu
             }

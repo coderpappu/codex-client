@@ -31,7 +31,7 @@ import wordpressThirdImg from "../../assets/services/Wordpress/thirdWordImg.svg"
 
 const serviceData = [
   {
-    catId: "seo_marketing",
+    catId: "seo-marketing",
     category: "SEO & Marketing",
     subcategory: [
       {
@@ -340,7 +340,7 @@ const serviceData = [
     ],
   },
   {
-    catId: "ui_ux_design",
+    catId: "ui-ux-design",
     category: "UI/UX Design",
     subcategory: [
       {
@@ -547,7 +547,7 @@ const serviceData = [
     ],
   },
   {
-    catId: "web_development",
+    catId: "web-development",
     category: "Web Development",
     subcategory: [
       {

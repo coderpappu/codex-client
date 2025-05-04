@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import Logo from "../../../assets/Home/Logos/logo.svg";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import menuIcon from "../../../assets/Home/Common SVG Images/menubar.svg";
+import Logo from "../../../assets/Home/Logos/logo.svg";
 import "../Navbar/Navbar.css";
-import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   //Main state for tabletes and mobile devices
@@ -62,9 +62,9 @@ const Navbar = () => {
           >
             <span className="sr-only">Open main menu</span>
             {isMobileMenuOpen ? (
-              <img  draggable={false} src={menuIcon} alt="Menu Icon" />
+              <img draggable={false} src={menuIcon} alt="Menu Icon" />
             ) : (
-              <img  draggable={false} src={menuIcon} alt="Menu Icon" />
+              <img draggable={false} src={menuIcon} alt="Menu Icon" />
             )}
           </button>
         </div>

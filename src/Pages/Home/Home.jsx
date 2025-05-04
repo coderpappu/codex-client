@@ -10,9 +10,35 @@ import Working from "../../components/Home/WhyWorking/Working";
 import WorkProcess from "../../components/Home/WorkProcess/WorkProcess";
 import TechnologyCarousel from "../../components/Products/Clearance/Technology";
 
+import { Helmet } from "react-helmet-async";
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Codex Devware | Best Custom Software, SaaS & Web Development Company
+          in Bangladesh
+        </title>
+        <meta
+          name="description"
+          content="Codex Devware is a leading software company in Bangladesh offering custom software, SaaS solutions, website development, SEO, and digital marketing services."
+        />
+        <link rel="canonical" href="https://codexdevware.com/" />
+        <meta
+          property="og:title"
+          content="Codex Devware | Software, SaaS & Web Development in Bangladesh"
+        />
+        <meta
+          property="og:description"
+          content="Build powerful software, SaaS apps, websites, and get SEO & marketing services from Codex Devware."
+        />
+        <meta property="og:url" content="https://codexdevware.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="../../assets/services/UiUX Design/firstImg.svg"
+        />
+      </Helmet>
       <Banner />
       <AboutUS />
 

@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import mobileLogo from "../../../assets/Home/Logos/mobile-logo.svg";
-import { useState } from "react";
 import TabletMobileMenu from "../MegaMenu/TabletMobileMenu";
 const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
   const [serviceMenu, setServicesMenu] = useState(false);
@@ -18,7 +18,12 @@ const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
       <div className="flex justify-between items-center p-0 mt-5">
         <Link to={"/"}>
           {" "}
-          <img  draggable={false} className="w-12 h-10 ml-10" src={mobileLogo} alt="Mobile Logo" />
+          <img
+            draggable={false}
+            className="w-12 h-10 ml-10"
+            src={mobileLogo}
+            alt="Mobile Logo"
+          />
         </Link>
         <button
           onClick={toggleMobileMenu}
@@ -54,7 +59,7 @@ const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
         </li>
         <li>
           <Link
-            to="/aboutUs"
+            to="/aboutus"
             className="block py-3 pl-10 pr-4 border-b-[1px]  border-gray-600"
           >
             About
@@ -62,7 +67,7 @@ const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
         </li>
         <li>
           <Link
-            to="/featuredProduct"
+            to="/featured-product"
             className="block py-3 pl-10 pr-4 border-b-[1px] border-gray-600"
           >
             Products

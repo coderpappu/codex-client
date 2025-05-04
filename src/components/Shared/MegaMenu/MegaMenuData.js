@@ -1,6 +1,6 @@
 const megaMenuData = [
   {
-    catId: "web_development",
+    catId: "web-development",
     category: "Web Development",
     subcategory: [
       {
@@ -22,7 +22,7 @@ const megaMenuData = [
     ],
   },
   {
-    catId: "ui_ux_design",
+    catId: "ui-ux-design",
     category: "UI/UX Design",
 
     subcategory: [
@@ -35,13 +35,13 @@ const megaMenuData = [
         title: "Logo Design",
       },
       {
-        id: 3,
+        id: 2,
         title: "Banner Design",
       },
     ],
   },
   {
-    catId: "seo_marketing",
+    catId: "seo-marketing",
     category: "SEO & Marketing",
     subcategory: [
       {

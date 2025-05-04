@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { Helmet } from "react-helmet-async";
 import BrcHome from "../../assets/Portfolio/brc-profile.png";
 import ProjectImage from "../../assets/Portfolio/contest-home.png";
 import LMSImage from "../../assets/Portfolio/lms-system.png";
@@ -49,6 +50,27 @@ export default function Portfolio() {
 
   return (
     <section className="pb-12 pt-20 lg:pb-[90px] lg:pt-[80px]">
+      <Helmet>
+        <title>
+          Our Portfolio | Client Projects & Case Studies | Codex Devware
+        </title>
+        <meta
+          name="description"
+          content="See our successful software, website, and SaaS projects for clients in Bangladesh. Discover how Codex Devware can help your business grow."
+        />
+        <link rel="canonical" href="https://codexdevware.com/portfolio" />
+        <meta
+          property="og:title"
+          content="Our Work | Codex Devware Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="Explore our client projects — from custom software to websites and SaaS solutions — built for businesses in Bangladesh."
+        />
+        <meta property="og:url" content="https://codexdevware.com/portfolio" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-[25px] font-sora lg:text-[40px] font-bold leading-normal  bg-gradient-to-r text from-[#02022D]  to-[#5B3CE8] text  bg-clip-text text-transparent">
